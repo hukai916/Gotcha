@@ -17,7 +17,7 @@
     # Create isolated virtual environment using reticulate to install python modules
     reticulate::virtualenv_create(
       envname = "r-reticulate-gotcha",
-      python = Sys.which("python3"),
+      python = virtualenv_starter("python3"),
       version = "python3",
       packages = c("pip", "wheel"),
       pip_version = "pip-22.1.1"
